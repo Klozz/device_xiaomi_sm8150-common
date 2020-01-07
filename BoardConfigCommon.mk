@@ -50,6 +50,9 @@ ifeq ($(TARGET_PREBUILT_KERNEL),)
   TARGET_KERNEL_SOURCE := kernel/xiaomi/raphael
 endif
 
+#allow missing dependencies
+ALLOW_MISSING_DEPENDENCIES := true
+
 # Platform
 TARGET_BOARD_PLATFORM := msmnile
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno640
